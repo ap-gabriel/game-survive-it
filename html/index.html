@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="Root" lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Survive It</title>
+    </head>
+
+    <body>
+        <!--
+        <div class="Map">
+            <h1>Map</h1>
+            <p>Map Description</p>
+            <p>Map Attribute 1</p>
+            <p>Map Attribute 2</p>
+            <p>Map Attribute 3</p>
+        </div>
+        -->
+
+        <section class="Resources">
+
+            <h1 class="Resources__Title">Choose Your Supplies</h1>
+
+            <h2 class="Resources__Label">Resource Points</h2>
+            <input class="Resources__Input type="Text" value="10" data-resourcetotal readonly>
+
+            <div class="Resources__Wrapper" data-resourcemain>
+                <label class="Resources__Label">Food and Water</label>
+                <button class="Resources__Button" data-resourceoperator="-">-</button>
+                <input class="Resources__Input" type="Text" value="0" data-resourceamount readonly>
+                <button class="Resources__Button" data-resourceoperator="+">+</button>
+            </div>
+            
+            <div class="Resources__Wrapper" data-resourcemain>
+                <label class="Resources__Label">Bonfire Kit</label>
+                <button class="Resources__Button" data-resourceoperator="-">-</button>
+                <input class="Resources__Input type="Text" value="0" data-resourceamount readonly>
+                <button class="Resources__Button" data-resourceoperator="+">+</button>
+            </div>
+
+            <div class="Resources__Wrapper" data-resourcemain>
+                <label class="Resources__Label">First Aid Kit</label>
+                <button class="Resources__Button" data-resourceoperator="-">-</button>
+                <input class="Resources__Input type="Text" value="0" data-resourceamount readonly>
+                <button class="Resources__Button" data-resourceoperator="+">+</button>
+            </div>
+
+            <h1 class="Resources__Title">Weapons</h1>
+
+            <label class="Resources__Label">Knife</label>
+            <input class="Resources__Input type="Text" value="1" data-resourceamount readonly>
+            
+            <div data-resourcemain>
+                <label class="Resources__Label">Pistol (Ammo Amount)</label>
+                <button class="Resources__Button" data-resourceoperator="-">-</button>
+                <input class="Resources__Input type="Text" value="0" data-resourceamount readonly>
+                <button class="Resources__Button" data-resourceoperator="+">+</button>
+            </div>
+
+        </section>
+
+        <!--
+        <div class="Attributes">
+            <h1>Attributes</h1>
+            <p>Carry Weight</p>
+            <p>0 / 50</p>
+            <p>Days Survived</p>
+            <p>0</p>
+            <p>Times You Died</p>
+            <p>0</p>
+        </div>
+
+        <div class="StartResult">
+            <button class="GoButton">Go</button>
+            <p>Resultado</p>
+        </div>
+        -->
+
+        <script src="/js/resourceControl.js"></script>
+    </body>
+</html>
