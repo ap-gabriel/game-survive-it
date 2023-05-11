@@ -3,7 +3,7 @@
 const resources = document.querySelectorAll('[data-resourcemain]') // Gets resource divs
 const resourceTotal = document.querySelector('[data-resourcetotal]') // Gets resource points
 
-// FUNCTIONS //
+// MAIN //
 
 // Adds listener to fieldset children.
 // If button +/-, adds/remove input.value by calling resourceController()
@@ -19,6 +19,8 @@ resources.forEach((element) => {
     })
 });
 
+// FUNCTIONS //
+
 // Gets resource.value and apply operation received from button pressed.
 function resourceController(operation, parent) {
     const resource = parent.querySelector('[data-resourceamount]')
@@ -28,7 +30,7 @@ function resourceController(operation, parent) {
 // Manages resourceTotal.value calculation to limit how many points the player can use.
 function calculateResources() {
     const resourceAmount = document.querySelectorAll('[data-resourceamount]')
-    let amountSum = -1
+    let amountSum = 0
     resourceAmount.forEach((amount) => {
         amountSum = (amountSum + parseInt(amount.value))
     })

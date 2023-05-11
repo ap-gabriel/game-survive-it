@@ -7,22 +7,43 @@
     </head>
 
     <body>
-        <!--
-        <div class="Map">
-            <h1>Map</h1>
-            <p>Map Description</p>
-            <p>Map Attribute 1</p>
-            <p>Map Attribute 2</p>
-            <p>Map Attribute 3</p>
-        </div>
-        -->
+        <h1>Survive It</h1>
+        <!-- MAP START -->
+        <section class="Map">
 
+            <h2>Map Title</h2>
+            <img>
+
+            <div>
+                <h3>Food Scarcity</h3>
+                <input name="food" type="Text" value="" data-threattype readonly>
+            </div>
+
+            <div>
+                <h3>Cold Intensity</h3>
+                <input name="cold" type="Text" value="" data-threattype readonly>
+            </div>
+
+            <div>
+                <h3>Hazard Threat</h3>
+                <input name="hazard" type="Text" value="" data-threattype readonly>
+            </div>
+
+            <div>
+                <h3>Enemy Density</h3>
+                <input name="enemy" type="Text" value="" data-threattype readonly>
+            </div>
+
+        </section>
+        <!-- MAP END -->
+        <!---->
+        <!-- RESOURCES START -->
         <section class="Resources">
-
-            <h1 class="Resources__Title">Choose Your Supplies</h1>
 
             <h2 class="Resources__Label">Resource Points</h2>
             <input class="Resources__Input type="Text" value="10" data-resourcetotal readonly>
+
+            <h2 class="Resources__Title">Supplies</h2>
 
             <div class="Resources__Wrapper" data-resourcemain>
                 <label class="Resources__Label">Food and Water</label>
@@ -44,20 +65,17 @@
                 <input class="Resources__Input type="Text" value="0" data-resourceamount readonly>
                 <button class="Resources__Button" data-resourceoperator="+">+</button>
             </div>
-
-            <h1 class="Resources__Title">Weapons</h1>
-
-            <label class="Resources__Label">Knife</label>
-            <input class="Resources__Input type="Text" value="1" data-resourceamount readonly>
             
             <div data-resourcemain>
-                <label class="Resources__Label">Pistol (Ammo Amount)</label>
+                <label class="Resources__Label">Firepower</label>
                 <button class="Resources__Button" data-resourceoperator="-">-</button>
                 <input class="Resources__Input type="Text" value="0" data-resourceamount readonly>
                 <button class="Resources__Button" data-resourceoperator="+">+</button>
             </div>
 
         </section>
+        <!-- RESOURCES END -->
+
 
         <!--
         <div class="Attributes">
@@ -76,6 +94,9 @@
         </div>
         -->
 
+        <!-- SCRIPTS START -->
+        <script src="/js/mapControl.js"></script>
         <script src="/js/resourceControl.js"></script>
+        <!-- SCRIPTS END -->
     </body>
 </html>
