@@ -1,0 +1,35 @@
+.Results__Section {
+    align-items: center;
+    background-color: var(--background2);
+    border: solid thin var(--border1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    padding-block: 1.5rem 1.0rem;
+    padding-inline: 10%;
+    width: 80%;
+}
+
+.Results__Description {
+    background: var(--background1);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-block: 0.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.Results__Wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.Results__Title {
+    margin-bottom: 0.5rem;
+}
+
+.Results__Count {
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,69 @@
+.Map__Section {
+    align-items: center;
+    background-color: var(--background2);
+    border: solid thin var(--border1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    padding-inline: 10%;
+    width: 80%;
+}
+
+.Map__Title {
+    background: var(--background1);
+    font-size: 1.5rem;
+    margin-block: 1.5rem;
+    text-align: center;
+    padding-block: 0.2rem;
+    width: 100%;
+}
+
+.Map__Image {
+    border: solid thin var(--border1);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.Map__Wrapper {
+    width: 100%;
+}
+
+.Map__Wrapper:last-child {
+    margin-bottom: 1.0rem;
+}
+
+.Map__Threat {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.Threat__Wrapper {
+    align-items: center;
+    background: var(--background1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    padding-block: 0.2rem;
+    width: 100%;
+}
+
+.Threat__Icon {
+    filter: invert();
+    padding-inline: 0.5rem;
+    opacity: 70%;
+    width: 1.2rem;
+}
+
+.Threat__Title {
+    text-align: center;
+    width: 100%;
+}
+
+.Threat__Input {
+    background: transparent;
+    font-size: 1rem;
+}

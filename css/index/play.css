@@ -1,0 +1,20 @@
+.Play__Section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.Play__Button {
+    background: var(--background2);
+    border: solid thin var(--border1);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding-block: 0.3rem;
+    width: 100%;
+}
+
+.Play__Button:active {
+    filter: brightness(115%);
+}

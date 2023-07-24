@@ -1,0 +1,67 @@
+.Root {
+    align-items: center;
+    background-color: var(--background1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10%;
+}
+
+.RootDark {
+    --background1: #1f1f20;
+    --background2: #1a1a1b;
+    --border1: rgba(235, 235, 245, 0.1);
+    --font: #c9cdcf;    
+}
+
+.Agdasima {
+    color: var(--font);
+    font-family: 'Agdasima', sans-serif;
+}
+
+.Regular {
+    font-weight: 400;
+}
+
+.Bold {
+    font-weight: 800;
+}
+
+.PositiveColor {
+    color: forestgreen;
+}
+
+.NegativeColor {
+    color: brown;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+    .Root {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .Root {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .Root {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .Root {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 3500px) {
+    .Root {
+        font-size: 35px;
+    }
+}

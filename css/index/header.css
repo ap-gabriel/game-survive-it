@@ -1,0 +1,11 @@
+.Title__Header {
+    align-items: center;
+    background-color: var(--background2);
+    border: solid thin var(--border1);
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-block: 1.5rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+}
