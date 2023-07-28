@@ -8,7 +8,7 @@ resources.forEach((element) => {
         const targetParent = event.target.parentNode
         if (targetOperation === '-' || targetOperation == '+' && parseInt(resourceTotal.innerHTML) > 0) {
             resourceController(targetOperation, targetParent)
-            resourceTotal.innerHTML = String(10 - calculateResources())
+            resourceTotal.innerHTML = String(4 - calculateResources())
         }
     })
 });

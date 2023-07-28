@@ -12,6 +12,7 @@
         <!-- CCS LOAD -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/root.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/index/header.css">
         <link rel="stylesheet" href="css/index/map.css">
         <link rel="stylesheet" href="css/index/resources.css">
@@ -21,123 +22,128 @@
 
     <body class="Root RootDark">
         <h1 class="Title__Header Agdasima Bold">Survive It</h1>
-        <!-- MAP START -->
-        <section class="Map__Section">
+        
+        <div class="Column__Wrapper">
+            <!-- MAP START -->
+            <section class="Map__Section">
 
-            <h2 class="Map__Title Agdasima" data-mapname></h2>
-            <img src="../graphics/maps/1.jpg" class="Map__Image" data-mapimage>
+                <h2 class="Map__Title Agdasima" data-mapname></h2>
+                <img src="../graphics/maps/1.jpg" class="Map__Image" data-mapimage>
 
-            <div class="Map__Wrapper">
+                <div class="Map__Wrapper">
 
-                <div class="Map__Threat">
-                    <div class="Threat__Wrapper">
-                        <img src="graphics/icons/food.svg" class="Threat__Icon">
-                        <h3 class="Threat__Title Agdasima">FOOD SCARCITY</h3>
-                        <img src="graphics/icons/food.svg" class="Threat__Icon">
+                    <div class="Map__Threat">
+                        <div class="Threat__Wrapper">
+                            <img src="graphics/icons/food.svg" class="Threat__Icon">
+                            <h3 class="Threat__Title Agdasima">FOOD SCARCITY</h3>
+                            <img src="graphics/icons/food.svg" class="Threat__Icon">
+                        </div>
+                        <p class="Threat__Input Agdasima" title="food" data-threattype readonly></p>
                     </div>
-                    <p class="Threat__Input Agdasima" title="food" data-threattype readonly></p>
-                </div>
-    
-                <div class="Map__Threat">
-                    <div class="Threat__Wrapper">
-                        <img src="graphics/icons/cold.svg" class="Threat__Icon">
-                        <h3 class="Threat__Title Agdasima">COLD INTENSITY</h3>
-                        <img src="graphics/icons/cold.svg" class="Threat__Icon">
-                    </div>   
-                    <p class="Threat__Input Agdasima" title="cold" data-threattype readonly></p>
+        
+                    <div class="Map__Threat">
+                        <div class="Threat__Wrapper">
+                            <img src="graphics/icons/cold.svg" class="Threat__Icon">
+                            <h3 class="Threat__Title Agdasima">COLD INTENSITY</h3>
+                            <img src="graphics/icons/cold.svg" class="Threat__Icon">
+                        </div>   
+                        <p class="Threat__Input Agdasima" title="cold" data-threattype readonly></p>
+                    </div>
+
                 </div>
 
+                <div class="Map__Wrapper">
+
+                    <div class="Map__Threat">
+                        <div class="Threat__Wrapper">
+                            <img src="graphics/icons/biohazard.svg" class="Threat__Icon">
+                            <h3 class="Threat__Title Agdasima">HAZARD THREAT</h3>
+                            <img src="graphics/icons/biohazard.svg" class="Threat__Icon">
+                        </div>  
+                        <p class="Threat__Input Agdasima" title="hazard" data-threattype readonly></p>
+                    </div>
+        
+                    <div class="Map__Threat">
+                        <div class="Threat__Wrapper">
+                            <img src="graphics/icons/skull.svg" class="Threat__Icon">
+                            <h3 class="Threat__Title Agdasima">ENEMY DENSITY</h3>
+                            <img src="graphics/icons/skull.svg" class="Threat__Icon">
+                        </div>  
+                        <p class="Threat__Input Agdasima" title="enemy" data-threattype readonly></p>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- MAP END -->
+            <!---->
+            <div class="Column__Right">
+                <!-- RESOURCES START -->
+                <section class="Resources__Section">
+
+                    <h2 class="Resources__Title Agdasima">Resource Points</h2>
+                    <p class="Resources__Total Agdasima" data-resourcetotal>4</p>
+
+                    <div class="Resources__Wrapper" data-resourcemain>
+                        <label class="Resources__Label Agdasima">FOOD AND WATER</label>
+                        <div class="Resources__Supplies">
+                            <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
+                            <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
+                            <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="Resources__Wrapper" data-resourcemain>
+                        <label class="Resources__Label Agdasima">BONFIRE KIT</label>
+                        <div class="Resources__Supplies">
+                            <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
+                            <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
+                            <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
+                        </div>
+                    </div>
+
+                    <div class="Resources__Wrapper" data-resourcemain>
+                        <label class="Resources__Label Agdasima">FIRST AID KIT</label>
+                        <div class="Resources__Supplies">
+                            <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
+                            <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
+                            <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="Resources__Wrapper" data-resourcemain>
+                        <label class="Resources__Label Agdasima">FIREPOWER</label>
+                        <div class="Resources__Supplies">
+                            <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
+                            <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
+                            <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- RESOURCES END -->
+                <!---->
+                <!-- PLAY START -->
+                <div class="Play__Section">
+                    <button class="Play__Button Agdasima Bold" data-playbutton>PLAY RUN</button>
+                </div>
+                <!-- PLAY END -->
+                <!---->
+                <!-- RESULTS START -->
+                <section class="Results__Section">
+                    <p class="Results__Description Agdasima">SCORE</p>
+                    <div class="Results__Wrapper">
+                        <h3 class="Results__Title Agdasima PositiveColor">TIMES SURVIVED</h3>
+                        <p class="Results__Count Agdasima PositiveColor" data-results>0</p>
+                    </div>
+                    <div class="Results__Wrapper">
+                        <h3 class="Results__Title Agdasima NegativeColor">TIMES FAILED</h3>
+                        <p class="Results__Count Agdasima NegativeColor" data-results>0</p>
+                    </div>
+                </section>
+                <!-- RESULTS END -->
             </div>
-
-            <div class="Map__Wrapper">
-
-                <div class="Map__Threat">
-                    <div class="Threat__Wrapper">
-                        <img src="graphics/icons/biohazard.svg" class="Threat__Icon">
-                        <h3 class="Threat__Title Agdasima">HAZARD THREAT</h3>
-                        <img src="graphics/icons/biohazard.svg" class="Threat__Icon">
-                    </div>  
-                    <p class="Threat__Input Agdasima" title="hazard" data-threattype readonly></p>
-                </div>
-    
-                <div class="Map__Threat">
-                    <div class="Threat__Wrapper">
-                        <img src="graphics/icons/skull.svg" class="Threat__Icon">
-                        <h3 class="Threat__Title Agdasima">ENEMY DENSITY</h3>
-                        <img src="graphics/icons/skull.svg" class="Threat__Icon">
-                    </div>  
-                    <p class="Threat__Input Agdasima" title="enemy" data-threattype readonly></p>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- MAP END -->
-        <!---->
-        <!-- RESOURCES START -->
-        <section class="Resources__Section">
-
-            <h2 class="Resources__Title Agdasima">Resource Points</h2>
-            <p class="Resources__Total Agdasima" data-resourcetotal>10</p>
-
-            <div class="Resources__Wrapper" data-resourcemain>
-                <label class="Resources__Label Agdasima">FOOD AND WATER</label>
-                <div class="Resources__Supplies">
-                    <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
-                    <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
-                    <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
-                </div>
-            </div>
-            
-            <div class="Resources__Wrapper" data-resourcemain>
-                <label class="Resources__Label Agdasima">BONFIRE KIT</label>
-                <div class="Resources__Supplies">
-                    <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
-                    <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
-                    <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
-                </div>
-            </div>
-
-            <div class="Resources__Wrapper" data-resourcemain>
-                <label class="Resources__Label Agdasima">FIRST AID KIT</label>
-                <div class="Resources__Supplies">
-                    <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
-                    <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
-                    <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
-                </div>
-            </div>
-            
-            <div class="Resources__Wrapper" data-resourcemain>
-                <label class="Resources__Label Agdasima">FIREPOWER</label>
-                <div class="Resources__Supplies">
-                    <button class="Resources__Button Agdasima" data-resourceoperator="-">-</button>
-                    <p class="Resources__Amount Agdasima" data-resourceamount>0</p>
-                    <button class="Resources__Button Agdasima" data-resourceoperator="+">+</button>
-                </div>
-            </div>
-
-        </section>
-        <!-- RESOURCES END -->
-        <!---->
-        <!-- PLAY START -->
-        <div class="Play__Section">
-            <button class="Play__Button Agdasima Bold" data-playbutton>PLAY RUN</button>
         </div>
-        <!-- PLAY END -->
-        <!---->
-        <!-- RESULTS START -->
-        <section class="Results__Section">
-            <p class="Results__Description Agdasima">SCORE</p>
-            <div class="Results__Wrapper">
-                <h3 class="Results__Title Agdasima PositiveColor">TIMES SURVIVED</h3>
-                <p class="Results__Count Agdasima PositiveColor" data-results>0</p>
-            </div>
-            <div class="Results__Wrapper">
-                <h3 class="Results__Title Agdasima NegativeColor">TIMES FAILED</h3>
-                <p class="Results__Count Agdasima NegativeColor" data-results>0</p>
-            </div>
-        </section>
-        <!-- RESULTS END -->
         <!-- SCRIPTS START -->
         <script src="/js/mapControl.js"></script>
         <script src="/js/resourceControl.js"></script>

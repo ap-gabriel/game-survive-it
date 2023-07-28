@@ -33,3 +33,10 @@
 .Results__Count {
     margin-left: 0.5rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .Results__Section {
+        padding-inline: 0px;
+        width: 100%;
+    }
+}

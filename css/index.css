@@ -1,0 +1,18 @@
+.Column__Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .Column__Wrapper {
+        flex-direction: row;
+        width: 100%;
+    }
+    .Column__Right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 100%;
+    }
+}

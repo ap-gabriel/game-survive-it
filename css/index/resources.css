@@ -66,3 +66,13 @@
 .Resources__Amount {
     font-size: 1.3rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .Resources__Section {
+        padding-inline: 0px;
+        width: 100%
+    }
+    .Resources__Button {
+        margin-inline: 2.5%;
+    }
+}

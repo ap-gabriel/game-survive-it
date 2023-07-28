@@ -12,6 +12,8 @@ let roundsLost = 0
 let r = 0
 
 // MAIN //
+setResults()
+updateResults(results, roundsWon, roundsLost)
 setButton(playButton, runGame)
 
 // FUNCTION //
@@ -38,10 +40,24 @@ function resetPlayerInfo() {
     r = 0
 }
 
-// Updates the wins / losses counter //
+// Updates the wins / losses counter and saves to local storage //
 function updateResults(resultsArr, winnings, losses) {
-    resultsArr[0].innerHTML = (parseInt(resultsArr[0].innerHTML * 0)) + winnings
-    resultsArr[1].innerHTML = (parseInt(resultsArr[1].innerHTML * 0)) + losses
+    resultsArr[0].innerHTML = (parseInt(resultsArr[0].innerHTML) * 0) + parseInt(winnings)
+    resultsArr[1].innerHTML = (parseInt(resultsArr[1].innerHTML) * 0) + parseInt(losses)
+    const result = {
+        "survived" : winnings,
+        "failed" : losses
+    }
+    localStorage.setItem("result", JSON.stringify(result))
+}
+
+// Set result if local storage has data saved //
+function setResults() {
+    if (typeof localStorage.result != "undefined") {
+        const parsedResult = JSON.parse(localStorage.result)
+        roundsWon = parsedResult.survived
+        roundsLost = parsedResult.failed
+    }
 }
 
 // Checks if player managed to survive or not //

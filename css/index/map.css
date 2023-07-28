@@ -67,3 +67,10 @@
     background: transparent;
     font-size: 1rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .Map__Section {
+        padding-inline: 0px;
+        width: 100%
+    }
+}
